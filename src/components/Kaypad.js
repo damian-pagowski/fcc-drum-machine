@@ -1,10 +1,15 @@
 import { Component } from "react";
-import Key from './Key'
+import React from "react";
+import Key from "./Key";
 export default class Keypad extends Component {
-    render() {
-        const keys = ["q", 'w', 'e', 'w', 's', 'd', 'z', 'x', 'c']
-    return <ul id="keypad">
-        {keys.map(k => <Key data={k}/>) }
-    </ul>;
+  render() {
+    const data = this.props.data;
+    return (
+      <ul id="keypad">
+        {Object.values(data).map(k => (
+          <Key data={k} play={this.props.play} />
+        ))}
+      </ul>
+    );
   }
 }
