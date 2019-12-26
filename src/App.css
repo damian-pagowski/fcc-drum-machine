@@ -35,7 +35,7 @@ margin:0;
   text-transform: capitalize;
 }
 
-#sample-name {
+#display {
   text-align: center;
   margin: 2rem;
 
@@ -69,7 +69,7 @@ li {
 }
 
 
-ul .white {
+ul .drum-pad {
 
   height: 16em;
   width: 4em;
@@ -81,7 +81,7 @@ ul .white {
   background: linear-gradient(to bottom, #eee 0%, #fff 100%);
 }
 
-ul .white:active {
+ul .drum-pad:active {
   border-top: 1px solid #777;
   border-left: 1px solid #999;
   border-bottom: 1px solid #999;

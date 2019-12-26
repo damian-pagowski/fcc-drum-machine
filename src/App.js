@@ -76,7 +76,7 @@ class App extends Component {
       <div className="App" id="drum-machine">
         <div id="main">
           <p id="now-playing">Now playing</p>
-          <p id="sample-name"> {this.state.current || "READY..."}</p>
+          <p id="display"> {this.state.current || "READY..."}</p>
           <p id="title">damian's drum machine</p>
         </div>
         <Keypad data={data} play={this.play} />

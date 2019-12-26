@@ -24,16 +24,16 @@ export default class Key extends React.Component {
     return (
       <a onClick={this.props.play} accessKey={this.props.data.key}>
         <li
-          className="white b"
+          className="drum-pad"
           key={this.props.data.key}
           id={this.props.data.key}
+          code={this.props.data.code}
+
           ref={this.key}
         >
           {this.props.data.key}
-          <audio>
-            <source src={this.props.data.url} type="audio/mpeg" />
-            Your browser does not support the audio element.
-          </audio>
+          <audio src={this.props.data.url}     
+              type="audio/mpeg" className="clip" id={this.props.data.key}/>
         </li>
       </a>
     );
